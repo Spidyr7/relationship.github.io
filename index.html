@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is He Secretly Obsessed With You? (2-Min Quiz)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #e75480;
+            --soft-pink: #fff0f6;
+            --dark-pink: #d63384;
+            --text: #333333;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--soft-pink);
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-pink);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--pink);
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        .couple-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(214, 51, 132, 0.2);
+            margin: 0 auto 25px;
+            display: block;
+        }
+        
+        .btn {
+            background: var(--pink);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(230, 84, 128, 0.3);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 10px auto 30px;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: var(--dark-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(230, 84, 128, 0.4);
+        }
+        
+        .countdown {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0 auto 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-weight: 500;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            max-width: 500px;
+            margin: 40px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+        }
+        
+        .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .couple-img {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .btn {
+                padding: 14px 28px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Is He <span style="color: var(--dark-pink);">Secretly Obsessed</span> With You? 💘</h1>
+        <div class="subtitle">Discover the Truth in Just 2 Minutes!</div>
+        
+        <!-- Couple Illustration -->
+        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80&fit=crop&crop=faces" 
+             alt="Happy couple" 
+             class="couple-img">
+        
+        <!-- Start Quiz Button - DIRECTLY OPENS YOUR TALLY FORM -->
+        <a href="https://tally.so/r/3x6kMk" 
+           class="btn" 
+           target="_blank">
+            Start The Quiz Now →
+        </a>
+        
+        <!-- Countdown Widget -->
+        <div class="countdown">
+            ⏳ <span id="counter">1,429</span> women taking quiz today
+        </div>
+        
+        <!-- Testimonial -->
+        <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            "This quiz was scarily accurate! I tried its suggestions and now my boyfriend can't stop texting me."
+            <div style="font-weight: 500; margin-top: 10px;">– Sarah K., 28</div>
+        </div>
+    </div>
+
+    <script>
+        // Animated counter
+        let count = 1429;
+        const counterEl = document.getElementById('counter');
+        
+        setInterval(() => {
+            count += Math.floor(Math.random() * 3) + 1;
+            counterEl.textContent = count.toLocaleString();
+        }, 8000);
+    </script>
+</body>
+</html>
