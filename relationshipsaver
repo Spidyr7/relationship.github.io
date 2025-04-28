@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Your Relationship Be Saved? (Honest Quiz)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rose: #e91e63;
+            --soft-rose: #fce4ec;
+            --deep-rose: #c2185b;
+            --text: #333333;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--soft-rose);
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--deep-rose);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--rose);
+            margin-bottom: 25px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .couple-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+            margin: 0 auto 25px;
+            display: block;
+        }
+        
+        .btn {
+            background: var(--rose);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 10px auto 30px;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: var(--deep-rose);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(233, 30, 99, 0.5);
+        }
+        
+        .countdown {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 0 auto 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-weight: 500;
+            color: var(--deep-rose);
+        }
+        
+        .testimonial {
+            font-style: italic;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            max-width: 500px;
+            margin: 40px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+            border-left: 4px solid var(--rose);
+        }
+        
+        .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .couple-img {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .btn {
+                padding: 14px 28px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Can Your Relationship Be Saved?</h1>
+        <div class="subtitle">Take Our Honest 2-Minute Quiz to Find Out</div>
+        
+        <!-- Original Couple Image -->
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80&fit=crop&crop=faces" 
+             alt="Couple in crisis" 
+             class="couple-img">
+        
+        <!-- Start Quiz Button -->
+        <a href="https://tally.so/r/mVqxMM" 
+           class="btn" 
+           target="_blank">
+            Start the Quiz Now →
+        </a>
+        
+        <!-- Updated Countdown Widget -->
+        <div class="countdown">
+            💞 <span id="counter">1,208</span> women learning relationship truths today
+        </div>
+        
+        <!-- Original Testimonial -->
+        <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            "I was ready to give up until this quiz showed me the 3 signs my relationship could be fixed. We're now happier than ever!"
+            <div style="font-weight: 500; margin-top: 10px;">– Jessica T., 34</div>
+        </div>
+    </div>
+
+    <script>
+        // Animated counter
+        let count = 1208;
+        const counterEl = document.getElementById('counter');
+        
+        setInterval(() => {
+            count += Math.floor(Math.random() * 3) + 1;
+            counterEl.textContent = count.toLocaleString();
+        }, 8000);
+    </script>
+</body>
+</html>
